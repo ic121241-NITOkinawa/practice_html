@@ -1,64 +1,104 @@
 <!DOCTYPE html>
-平で書くと
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My test page</title>
+        <link rel="icon" href="./images/favicon.png">
+        <meta name="author" content="Akihiro Yoza">
+        <meta name="description" content="hogehogehoge~~"
+    </head>
+    <body>
+        <h2>まずは書いてみよう!</h2>
+        平で書くと
+        改行されない
+
+        <p>pタグを使うと</p>
+        <p>ちゃんと改行される</p>
 
 
-改行されない
+        <p class="editor-note">pタグの後ろに class="hoge"で</p>
+        <p>直接は見えない属性を追加できる</p>
+        <p>class="hoge" のダブルクォーテーションは必ず入れよう!</p>
 
-<p>pタグを使うと</p>
-<p>ちゃんと改行される</p>
+        <p>タグのスラッシュがない左側を<strong>Opening Tag</strong></p>
+        <p>スラッシュがある右側を<strong>Closing Tag</strong>と言います</p>
+        <p>Opening TagとClosing Tagに挟まれた領域を<strong>Content</strong></p>
+        <p>Opening TagからContentを挟んでClosing Tagまで含めたものをElementと言うよ</p>
 
+        <p>文字を強調するときには<strong>strongタグ</strong>を使おう!</p>
+        <p>タグを入れ子にするときには、開始終了の<strong>順序を間違えない</strong>よう注意しよう</p>
 
-<p class="editor-note">pタグの後ろに class="hoge"で</p>
-<p>直接は見えない属性を追加できる</p>
-<p>class="hoge" のダブルクォーテーションは必ず入れよう!</p>
+        <p>画像はimgタグを使うぞ！</p>
+        <p>src属性とalt属性を追加して画像を読み込んだりするぞ！</p>
+        <p>imgタグみたいにコンテンツがないものをempty elementsと呼ぶよ！</p>
+        <img src="images/favicon.png" alt="My fabicon">
 
-<p>タグのスラッシュがない左側を<strong>Opening Tag</strong></p>
-<p>スラッシュがある右側を<strong>Closing Tag</strong>と言います</p>
-<p>Opening TagとClosing Tagに挟まれた領域を<strong>Content</strong></p>
-<p>Opening TagからContentを挟んでClosing Tagまで含めたものをElementと言うよ</p>
+        <p>
+            !DOCTYPE htmlはHTMLファイルに必須の前置き
+            エラーチェックに使われていたりしたけど、今はほぼただのshebang
+        </p>
+        <p>
+            htmlタグはルート要素であり、それ以下全てのコンテンツを囲んでいる
+        </p>
+        <p>
+            headタグは検索エンジン向けのキーワードや、文字コードの指定、CSSを含む
+            ファビコンとか、ページのタイトルとしてtitleタグを入れる
+        </p>
 
-<p>文字を強調するときには<strong>strongタグ</strong>を使おう!</p>
-<p>タグを入れ子にするときには、開始終了の<strong>順序を間違えない</strong>よう注意しよう</p>
+        <p>
+            titleタグはウェブブラウザのタブに表示される文字列を入れるところ<br>
+        </p>
+        <p>
+            お気に入りに登録したときの文字列にもなるぞ！
+        </p>
 
-<p>画像はimgタグを使うぞ！</p>
-<p>src属性とalt属性を追加して画像を読み込んだりするぞ！</p>
-<p>imgタグみたいにコンテンツがないものをempty elementsと呼ぶよ！</p>
-<img src="images/fabicon.png" alt="My fabicon" >
-
-<p>
-    !DOCTYPE htmlはHTMLファイルに必須の前置き
-    エラーチェックに使われていたりしたけど、今はほぼただのshebang
-</p>
-<p>
-    htmlタグはルート要素であり、それ以下全てのコンテンツを囲んでいる
-</p>
-<p>
-    headタグは検索エンジン向けのキーワードや、文字コードの指定、CSSを含む
-    ファビコンとか、ページのタイトルとしてtitleタグを入れる
-</p>
-
-<p>
-    titleタグはウェブブラウザのタブに表示される文字列を入れるところ<br>
-</p>
-<p>
-    お気に入りに登録したときの文字列にもなるぞ！
-</p>
-
-<p>
-    bodyタグはテキスト、画像、ビデオ、オーディオなどメインコンテンツを書くところ
-</p>
+        <p>
+            bodyタグはテキスト、画像、ビデオ、オーディオなどメインコンテンツを書くところ
+        </p>
 
 
+        <img src="./images/fabicon.png" alt=" icon">
+
+        <h1>メインタイトル　でかい</h1>
+        <h2>最上位見出し</h2>
+        <h3>小見出し</h3>
+        <h4>孫見出し</h4>
+        <h5>ひ孫見出し</h5>
+        <h6>ひひ孫見出し</h6>
+        <p>普通のテキスト</p>
+
+        <h2>リスト(箇条書き)</h2>
+        <p>リストを使うにはul、olタグとliタグを使います</p>
+        <p>unorderd list, ordered list, list itemタグ</p>
+        <ul>
+            <li>リ</li>
+            <li>ス</li>
+            <li>ト</li>
+        </ul>
+        <ol>
+            <li>リ</li>
+            <li>ス</li>
+            <li>ト</li>
+        </ol>
+
+        <h2>リンク</h2>
+        <p>リンクを貼るには aタグとhref属性を使うを使う</p>
+        <a href="https://www.mozila.org/en-US/about/manifesto/">Mozilla Manifesto</a>
+
+        <h2>hoge</h2>
+        <p>yeah!</p>
 
 
+        <pre>
+&lt;pre&gt;タグを使えば何でも表示できる！
+「&amp;lt」と書けばエスケープできる
+&lt;pre&gt;タグはタブ文字もそのまま反映するみたい……
+        </pre>
 
+        <blockquote>
+            &lt;blockquote&gt;タグを使えば解決！！！！！ <br>
+            でもなんか文字でかいな
+        </blockquote>
 
-
-
-
-
-
-
-
-
-
+    </body>
+</html>
